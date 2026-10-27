@@ -1,0 +1,896 @@
+/* =====================================================
+   CTS PORTAL - COMPLETE STYLE
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    color: #ffffff;
+
+    background:
+        radial-gradient(circle at 15% 20%, #193b8f 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, #4b1d91 0%, transparent 35%),
+        linear-gradient(135deg, #050b24, #0b1740, #090d29);
+
+    background-attachment: fixed;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+   ===================================================== */
+
+nav {
+    height: 75px;
+    padding: 0 6%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(5, 12, 40, 0.85);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(80, 150, 255, 0.25);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+nav h2 {
+    font-size: 26px;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        90deg,
+        #4db8ff,
+        #8b6cff,
+        #c16cff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav div {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #dce8ff;
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+
+    background: rgba(76, 139, 255, 0.18);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(60, 130, 255, 0.25);
+}
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #65baff,
+        #a66cff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: fadeDown 1s ease;
+}
+
+.hero p {
+    color: #b8c9ed;
+
+    font-size: 20px;
+
+    margin-bottom: 35px;
+
+    animation: fadeUp 1s ease;
+}
+
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        #536dff,
+        #a34fff
+    );
+
+    box-shadow:
+        0 10px 30px rgba(83, 80, 255, 0.35);
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow:
+        0 15px 40px rgba(112, 91, 255, 0.55);
+}
+
+
+/* =====================================================
+   HOME CARDS
+   ===================================================== */
+
+.cards {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 30px 20px 80px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(40, 65, 130, 0.55),
+            rgba(24, 20, 70, 0.55)
+        );
+
+    border: 1px solid rgba(100, 160, 255, 0.2);
+
+    backdrop-filter: blur(15px);
+
+    transition: 0.4s;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(100, 170, 255, 0.7);
+
+    box-shadow:
+        0 20px 50px rgba(49, 112, 255, 0.3);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+
+    color: #69baff;
+}
+
+.card p {
+    color: #b7c7e7;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   REGISTRATION PAGE
+   ===================================================== */
+
+.register-page {
+    width: 92%;
+
+    max-width: 1250px;
+
+    min-height: calc(100vh - 75px);
+
+    margin: auto;
+
+    padding: 45px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 45px;
+}
+
+
+/* =====================================================
+   REGISTRATION IMAGE
+   ===================================================== */
+
+.register-image {
+    width: 55%;
+
+    height: 650px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    border: 1px solid rgba(80, 160, 255, 0.3);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5);
+}
+
+.register-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.6s;
+}
+
+.register-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   IMAGE TEXT
+   ===================================================== */
+
+.image-text {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 45px 35px 35px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(2, 8, 30, 0.95)
+        );
+}
+
+.image-text h1 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #64baff,
+        #9e70ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-text p {
+    color: #c4d4f3;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FORM CONTAINER
+   ===================================================== */
+
+.form-container {
+    width: 430px;
+
+    padding: 38px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 42, 90, 0.8),
+            rgba(16, 18, 55, 0.8)
+        );
+
+    border: 1px solid rgba(92, 155, 255, 0.3);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.4);
+
+    animation: formAppear 0.7s ease;
+}
+
+.register-page .form-container {
+    margin: 0;
+}
+
+.form-container h1 {
+    text-align: center;
+
+    margin-bottom: 28px;
+
+    font-size: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #69b9ff,
+        #a86aff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =====================================================
+   FORM LABELS
+   ===================================================== */
+
+.form-container label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    color: #cbd9f5;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.form-container input,
+.form-container select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(108, 160, 255, 0.3);
+
+    outline: none;
+
+    background:
+        rgba(8, 19, 50, 0.85);
+
+    color: white;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.form-container input::placeholder {
+    color: #7182a8;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+
+    border-color: #5daeff;
+
+    box-shadow:
+        0 0 0 3px rgba(75, 155, 255, 0.12),
+        0 0 20px rgba(75, 155, 255, 0.15);
+}
+
+.form-container select {
+    cursor: pointer;
+}
+
+.form-container select option {
+    background: #101b40;
+    color: white;
+}
+
+
+/* =====================================================
+   PASSWORD BOX
+   ===================================================== */
+
+.password-box {
+    position: relative;
+
+    width: 100%;
+}
+
+.password-box input {
+    padding-right: 50px;
+}
+
+.password-box span {
+    position: absolute;
+
+    right: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+    user-select: none;
+
+    opacity: 0.8;
+
+    transition: 0.2s;
+}
+
+.password-box span:hover {
+    opacity: 1;
+
+    transform:
+        translateY(-50%)
+        scale(1.15);
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+   ===================================================== */
+
+.form-container button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #5747ff,
+            #7c52ff,
+            #27a7ff
+        );
+
+    box-shadow:
+        0 10px 25px rgba(80, 80, 255, 0.3);
+
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(80, 100, 255, 0.5);
+}
+
+.form-container button:active {
+    transform: scale(0.98);
+}
+
+
+/* =====================================================
+   MESSAGES
+   ===================================================== */
+
+.message {
+    text-align: center;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    color: #7dffbc;
+
+    background: rgba(0, 255, 140, 0.08);
+
+    border: 1px solid rgba(0, 255, 140, 0.2);
+}
+
+.error {
+    text-align: center;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    color: #ff8f9c;
+
+    background: rgba(255, 50, 80, 0.08);
+
+    border: 1px solid rgba(255, 50, 80, 0.2);
+}
+
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
+
+.dashboard {
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(18, 30, 68, 0.75);
+
+    border:
+        1px solid rgba(100, 160, 255, 0.25);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    overflow-x: auto;
+}
+
+.dashboard h1 {
+    margin-bottom: 12px;
+
+    color: #73bbff;
+}
+
+.dashboard h2 {
+    margin: 25px 0;
+
+    color: #dce8ff;
+}
+
+
+/* =====================================================
+   TABLE
+   ===================================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+table th {
+    padding: 15px;
+
+    text-align: left;
+
+    background:
+        linear-gradient(
+            90deg,
+            #263f8f,
+            #45318d
+        );
+
+    color: white;
+}
+
+table td {
+    padding: 14px;
+
+    border-bottom:
+        1px solid rgba(130, 160, 220, 0.12);
+
+    color: #cbd7ef;
+}
+
+table tr {
+    transition: 0.25s;
+}
+
+table tr:hover {
+    background:
+        rgba(80, 140, 255, 0.08);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+   ===================================================== */
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes formAppear {
+
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    nav {
+        padding: 0 3%;
+    }
+
+    nav h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+    .register-page {
+
+        flex-direction: column;
+
+        width: 95%;
+
+    }
+
+    .register-image {
+
+        width: 100%;
+
+        height: 400px;
+
+    }
+
+    .register-page .form-container {
+
+        width: 100%;
+
+        max-width: 500px;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    nav {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+    nav div {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    nav a {
+
+        font-size: 12px;
+
+        padding: 8px;
+
+    }
+
+    .hero {
+
+        min-height: 450px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+
+    }
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+    .buttons {
+
+        flex-direction: column;
+
+        width: 220px;
+
+    }
+
+    .register-page {
+
+        padding: 25px 0;
+
+    }
+
+    .register-image {
+
+        height: 300px;
+
+    }
+
+    .image-text {
+
+        padding: 25px;
+
+    }
+
+    .image-text h1 {
+
+        font-size: 24px;
+
+    }
+
+    .form-container {
+
+        padding: 25px 20px;
+
+    }
+
+    .form-container h1 {
+
+        font-size: 25px;
+
+    }
+
+}
